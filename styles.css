@@ -33,7 +33,6 @@ h1 {
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
-    
 }
 
 .slider {
@@ -97,22 +96,18 @@ h1 {
     background: #80858bc9;
     color: white;
     font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: .8s;
 }
 
 .prev {
-    position: absolute;
-    top: 50%;
     left: 20px;
-    cursor: pointer;
-    transition: .8s;
 }
 
 .next {
-    position: absolute;
-    top: 50%;
     right: 20px;
-    cursor: pointer;
-    transition: .8s;
 }
 
 .prev:hover, .next:hover {

@@ -11,15 +11,10 @@ const next = document.querySelector(".next");
 let direction = 0;
 let percentage = 0;
 
-// add functionality to next button
+// add functionality to next button 
 next.addEventListener("click", () => {
-    // if next button is clicked first
-    if (direction === 0) {
-        slider.style.transform = `translate(${percentage-=40}%)`
-        
-        direction = 1;
-    // change direction from previous (move left) to next (move right)
-    } else if (direction === -1) {
+    // if next button is clicked first or change direction from previous (move left) to next (move right) 
+    if (direction === 0 || direction === -1) {
         slider.style.transform = `translate(${percentage-=40}%)`
         
         direction = 1;

@@ -28,7 +28,7 @@ next.addEventListener("click", () => {
     }    
 })
 
-// flexible variant
+// add functionality to previous button
 prev.addEventListener("click", () => {
     // if previous button is clicked first 
     if (direction === 0) {
@@ -42,10 +42,10 @@ prev.addEventListener("click", () => {
         slider.style.transform = `translate(${percentage+=40}%)`
     } else {
         slider.style.transform = `translate(${percentage}%)`
-    }
-    
+    }    
 })
 
+// add infinite loop functionality
 slider.addEventListener("transitionend", () => {
     // functionality after clicking next
     if (direction === 1) {
